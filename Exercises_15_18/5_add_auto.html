@@ -1,0 +1,18 @@
+<!-- add_auto.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Auto</title>
+</head>
+<body>
+
+  <h2>Add Auto</h2>
+  <form method="post" action="{% url 'add_auto' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add Auto</button>
+  </form>
+
+</body>
+</html>
